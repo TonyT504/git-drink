@@ -1,0 +1,140 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+   
+body {
+    padding: 10px 5px;
+    line-height: 1.3;
+    background-image: url(./budha\ bar.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+   
+}
+body img{
+    opacity: .5;
+}
+
+a{
+    color: whitesmoke;
+    font-size: larger;
+}
+
+header
+{
+   
+    background-position: center;
+    padding: 35px 5px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    margin-bottom: 15px;
+}
+#navBar {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+h2{
+ color: goldenrod;
+}
+
+
+h1,
+h3,
+h5,
+p {
+    color:#fffb22;
+    font-family: fantasy;
+    font-style: oblique;
+    font-size: larger;
+    font-weight: 600;
+     text-align: center;
+    
+}
+
+
+
+
+img {
+    width: 100%;
+    height: 500px;
+
+}
+
+.hidden{
+   
+    display: none;
+}
+
+#prevBtn{
+
+ position: absolute;
+ left: 5px;
+ top: 49%;
+}
+
+#nextBtn{
+
+    position: absolute;
+    right: 5px;
+    top: 49%;
+   }
+
+#box{
+    position: relative;
+
+
+}
+
+#slider{
+    width: 1000px;
+    height: 100px;
+    margin: 20px auto;
+    position: relative;
+    border: 10px solid white;
+    bottom: 0px 0px 5px 2px;
+}
+
+
+
+* {box-sizing: border-box}
+.mySlides1, .mySlides2, .mySlides3, .mySlides4, .mySlides5 {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 600px;
+  position: relative;
+  margin: auto;
+  
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
