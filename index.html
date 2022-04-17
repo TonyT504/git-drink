@@ -10,10 +10,74 @@
     <link href="./assets/css/style.css">
 </head>
 
+
 <body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="https://bulma.io">
+                <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+            </a>
+
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item">
+                    Home
+                </a>
+
+                <a class="navbar-item">
+                    Documentation
+                </a>
+
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                        More
+                    </a>
+
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item">
+                            About
+                        </a>
+                        <a class="navbar-item">
+                            Jobs
+                        </a>
+                        <a class="navbar-item">
+                            Contact
+                        </a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item">
+                            Report an issue
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button is-primary">
+                            <strong>Sign up</strong>
+                        </a>
+                        <a class="button is-light">
+                            Log in
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
     <h1> <strong>Drink Recipes</strong></h1>
 
     <section class="drink-recipes">
+
+
 
         <form>
             <input id="drink-name" type="text" placeholder="Enter Drink Name"></input>
@@ -21,143 +85,278 @@
         </form>
 
         <div class="drink-container" id="drink-container">
-            <!-- <img id="drink-image-container" src=""> -->
-
-        </div>
-        <div class="gin" id="gin" style="line-height: 1.5;">
-            <div class="gin-info">
-
-                <h2>Gin</h2>
-
-                <p>
-                    Most of the people think that Gin comes from England or Ireland. But it is not true! What
-                    actually very few know: Gin is originally from the Netherlands. Since the Middle Ages people
-                    knew about the medical effects and the disinfectant healing power of juniper berries which were
-                    consumed to fight against fever and even the pest. The dutch doctor Franciscus Sylvius de la Boe
-                    is the inventor of Gin. In the 16th century, he made a schnaps distilled with juniper berries,
-                    so called “Genever” (in dutch: juniper berry) which was consumed for medical purposes. During
-                    the Eighty Year’s War (1568-1648) the dutch soldiers were supposed to drink the “Genever” to
-                    feel brave. In the 17th century “Genever” came to England, where the originally “Genever”
-                    developed to the today’s “Gin”.
 
 
-                </p>
-            </div>
+            <div class="tile is-ancestor">
+                <div class="tile is-vertical is-8">
+                    <div class="tile">
+                        <div class="tile is-parent is-vertical">
+                            <article class="tile is-child notification is-primary">
+                                <!-- <p class="title">Gin</p> -->
+                                <!-- <p class="subtitle">Top tile</p> -->
+                                <div class="content">
+                                    <div class="gin" id="gin" style="line-height: 1.5;">
+                                        <div class="gin-info">
+
+                                            <h2>Gin</h2>
+
+                                            <p>
+                                                Most of the people think that Gin comes from England or Ireland. But it
+                                                is not true!
+                                                What
+                                                actually very few know: Gin is originally from the Netherlands. Since
+                                                the Middle
+                                                Ages people
+                                                knew about the medical effects and the disinfectant healing power of
+                                                juniper berries
+                                                which were
+                                                consumed to fight against fever and even the pest. The dutch doctor
+                                                Franciscus
+                                                Sylvius de la Boe
+                                                is the inventor of Gin. In the 16th century, he made a schnaps distilled
+                                                with
+                                                juniper berries,
+                                                so called “Genever” (in dutch: juniper berry) which was consumed for
+                                                medical
+                                                purposes. During
+                                                the Eighty Year’s War (1568-1648) the dutch soldiers were supposed to
+                                                drink the
+                                                “Genever” to
+                                                feel brave. In the 17th century “Genever” came to England, where the
+                                                originally
+                                                “Genever”
+                                                developed to the today’s “Gin”.
 
 
-        </div>
+                                            </p>
+                                        </div>
 
 
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="tile is-child notification is-warning">
+                                <!-- <p class="title">...tiles</p>
+                                <p class="subtitle">Bottom tile</p> -->
+                                <div class="content">
+                                    <div class="rum" id="rum" style="line-height: 1.5;">
+                                        <div class="rum-info">
+                                            <h2>Rum</h2>
 
-        <div class="rum" id="rum" style="line-height: 1.5;">
-            <div class="rum-info">
-                <h2>Rum</h2>
+                                            <p>
+                                                Originally, rum started out before it was even called rum. Way back
+                                                before the word
+                                                rum was
+                                                recorded, there was a drink referred to as “wine sugar.” Wine sugar was
+                                                most likely
+                                                the
+                                                beginning of rum back in the thirteen hundreds. While the word rum
+                                                didn’t exist at
+                                                the time,
+                                                wine sugar most likely was very like the first official rums. It may
+                                                have been
+                                                something
+                                                very rudimentary, but on a base level, it was, most likely, the rum
+                                                origin.
 
-                <p>
-                    Originally, rum started out before it was even called rum. Way back before the word rum was
-                    recorded, there was a drink referred to as “wine sugar.” Wine sugar was most likely the
-                    beginning of rum back in the thirteen hundreds. While the word rum didn’t exist at the time,
-                    wine sugar most likely was very like the first official rums. It may have been something
-                    very rudimentary, but on a base level, it was, most likely, the rum origin.
+                                                The first recorded rum, however, came about in the West Indies around
+                                                1650. However,
+                                                in
+                                                1650, these first rums were known on records from Barbados as
+                                                “kill-devil” or
+                                                “rumbullion.”
+                                                The name rum started to be used as the regular name in 1667. The
+                                                beginning of rum is
+                                                tied to
+                                                a dark part of history. Slaves were traded to the West Indies for
+                                                molasses, and the
+                                                molasses
+                                                was made into rum. Then, that rum was traded for more slaves.
 
-                    The first recorded rum, however, came about in the West Indies around 1650. However, in
-                    1650, these first rums were known on records from Barbados as “kill-devil” or “rumbullion.”
-                    The name rum started to be used as the regular name in 1667. The beginning of rum is tied to
-                    a dark part of history. Slaves were traded to the West Indies for molasses, and the molasses
-                    was made into rum. Then, that rum was traded for more slaves.
+                                                These days, rum is made and distributed in a way we can be proud of.
+                                                Many
+                                                distilleries and
+                                                makers of rum run small operations. Rum may have gotten a start in the
+                                                time of
+                                                slavery, as
+                                                so many things did. However, the rum we drink today has come a long way.
+                                            </p>
+                                        </div>
 
-                    These days, rum is made and distributed in a way we can be proud of. Many distilleries and
-                    makers of rum run small operations. Rum may have gotten a start in the time of slavery, as
-                    so many things did. However, the rum we drink today has come a long way.
-                </p>
-            </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="tile is-parent">
+                            <article class="tile is-child notification is-info">
+                                <!-- <p class="title">Middle tile</p>
+                                <p class="subtitle">With an image</p> -->
+                                <div class="content">
+                                    <div class="vodka" id="vodka" style="line-height: 1.5;">
+                                        <div class="vodka-info">
+                                            <h2>Vodka</h2>
 
-        </div>
+                                            <p>
+                                                The word Vodka comes from the translation of water in Russian: “Voda”.
+                                                On the other
+                                                hand, the Polish
+                                                used the term to refer to any white distilled drink. Its birth brings us
+                                                to the
+                                                Middle Age, when it
+                                                started becoming popular. This liquor was produced from potatoes and had
+                                                medicinal
+                                                purposes. Experts
+                                                suggest that its use was common in Russia because it was an effective
+                                                remedy against
+                                                the cold
+                                                weather.
+
+                                                Curiously, the first to develop this distillate were monks, thanks to
+                                                them, farmers
+                                                of the
+                                                eighteenth century began to drink vodka and its use began to grow in
+                                                Russia.
+                                                However, this drink did
+                                                not begin to expand until 1917, during the Russian Revolution, in which
+                                                the
+                                                population began to
+                                                escape from the country towards Europe, and what did they bring with
+                                                them? Their
+                                                Voda or water.
+                                                However, the worldwide recognition of this drink did not arrive until
+                                                the Second
+                                                World War, the
+                                                historical moment when Vodka reaches the hands of the North Americans.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="tile is-parent">
+                        <article class="tile is-child notification is-danger">
+                            <!-- <p class="title">Wide tile</p>
+                            <p class="subtitle">Aligned with the right tile</p> -->
+                            <div class="content">
+                                <div class="tequila" id="tequila" style="line-height: 1.5;">
+                                    <div class="tequila-info">
+                                        <h2>Tequila</h2>
+                                        <p>
+                                            The tequila we know and love today didn't start off the way we know it now.
+                                            In its
+                                            earliest
+                                            version,
+                                            it was known as pulque and was made from the fermented sap of the agave
+                                            plant by the
+                                            Aztec
+                                            civilization in what is now northern Mexico. According to Liquor.com, this
+                                            same
+                                            technique likely
+                                            dates back to 1000 B.C. and was used by the Olmecs an even more prehistoric
+                                            Meso-American
+                                            civilization. Pulque was first documented via pictograms on stone walls
+                                            around 200 A.D.
+                                            Many believe that the Spanish invasion of the Aztec civilization in the
+                                            1500s marks the
+                                            beginning of
+                                            a distillation process used for the agave plant to make tequila. When brandy
+                                            supplies
+                                            ran low,
+                                            Spaniards used mud and agave to create a drink (one more similar to
+                                            modern-day mezcal).
+                                            By the
+                                            early
+                                            1600s the Marquis of Altamira (a Spanish nobleman) built the first
+                                            large-scale
+                                            distillery in
+                                            what is
+                                            now Tequila, Jalisco. Jalisco is where the majority of tequila is produced
+                                            to this day.
 
 
+                                        </p>
+                                    </div>
 
+                                </div>
+                            </div>
+                        </article>
+                    </div>
 
-
-        <div class="vodka" id="vodka" style="line-height: 1.5;">
-            <div class="vodka-info">
-                <h2>Vodka</h2>
-
-                <p>
-                    The word Vodka comes from the translation of water in Russian: “Voda”. On the other hand, the Polish
-                    used the term to refer to any white distilled drink. Its birth brings us to the Middle Age, when it
-                    started becoming popular. This liquor was produced from potatoes and had medicinal purposes. Experts
-                    suggest that its use was common in Russia because it was an effective remedy against the cold
-                    weather.
-
-                    Curiously, the first to develop this distillate were monks, thanks to them, farmers of the
-                    eighteenth century began to drink vodka and its use began to grow in Russia. However, this drink did
-                    not begin to expand until 1917, during the Russian Revolution, in which the population began to
-                    escape from the country towards Europe, and what did they bring with them? Their Voda or water.
-                    However, the worldwide recognition of this drink did not arrive until the Second World War, the
-                    historical moment when Vodka reaches the hands of the North Americans.
-                </p>
-            </div>
-
-
-            <div class="tequila" id="tequila" style="line-height: 1.5;">
-                <div class="tequila-info">
-                    <h2>Tequila</h2>
-                    <p>
-                        The tequila we know and love today didn't start off the way we know it now. In its earliest
-                        version,
-                        it was known as pulque and was made from the fermented sap of the agave plant by the Aztec
-                        civilization in what is now northern Mexico. According to Liquor.com, this same technique likely
-                        dates back to 1000 B.C. and was used by the Olmecs an even more prehistoric Meso-American
-                        civilization. Pulque was first documented via pictograms on stone walls around 200 A.D.
-                        Many believe that the Spanish invasion of the Aztec civilization in the 1500s marks the
-                        beginning of
-                        a distillation process used for the agave plant to make tequila. When brandy supplies ran low,
-                        Spaniards used mud and agave to create a drink (one more similar to modern-day mezcal). By the
-                        early
-                        1600s the Marquis of Altamira (a Spanish nobleman) built the first large-scale distillery in
-                        what is
-                        now Tequila, Jalisco. Jalisco is where the majority of tequila is produced to this day.
-
-
-                    </p>
                 </div>
+                <div class="tile is-parent">
+                    <article class="tile is-child notification is-success">
+                        <div class="content">
+                            <!-- <p class="title">Tall tile</p>
+                            <p class="subtitle">With even more content</p> -->
+                            <div class="content">
+                                <div class="whiskey" id="whiskey" style="line-height: 1.5;">
+                                    <div class="whisky-info">
+                                        <h2>Whiskey</h2>
 
-            </div>
+                                        <p>
+                                            whiskey, also spelled whisky, any of several distilled liquors made from a
+                                            fermented
+                                            mash of
+                                            cereal
+                                            grains and including Scotch, Irish, and Canadian whiskeys and the various
+                                            whiskeys of
+                                            the United
+                                            States. Whiskey is always aged in wooden containers, usually of white oak.
+                                            The name,
+                                            spelled
+                                            without
+                                            an e by the Scots and Canadians and with an e in Ireland and the United
+                                            States, comes
+                                            from the
+                                            Celtic usquebaugh (Irish uisce beathadh, Scots Gaelic uisge beatha, both
+                                            adaptations of
+                                            the
+                                            Latin
+                                            phrase aqua vitae, meaning “water of life”). The earliest direct account of
+                                            whiskey
+                                            making is
+                                            found
+                                            in Scottish records dating from 1494.
 
-            <div class="whiskey" id="whiskey" style="line-height: 1.5;">
-                <div class="whisky-info">
-                    <h2>Whiskey</h2>
+                                            The whiskeys produced in each country are distinctive in character because
+                                            of
+                                            differences in the
+                                            method of production, the type and character of the cereal grains, and the
+                                            quality and
+                                            character
+                                            of
+                                            the water employed.
 
-                    <p>
-                        whiskey, also spelled whisky, any of several distilled liquors made from a fermented mash of
-                        cereal
-                        grains and including Scotch, Irish, and Canadian whiskeys and the various whiskeys of the United
-                        States. Whiskey is always aged in wooden containers, usually of white oak. The name, spelled
-                        without
-                        an e by the Scots and Canadians and with an e in Ireland and the United States, comes from the
-                        Celtic usquebaugh (Irish uisce beathadh, Scots Gaelic uisge beatha, both adaptations of the
-                        Latin
-                        phrase aqua vitae, meaning “water of life”). The earliest direct account of whiskey making is
-                        found
-                        in Scottish records dating from 1494.
+                                            Straight whiskeys are unmixed or mixed only with whiskey from the same
+                                            distillation
+                                            period and
+                                            distiller. Blended whiskeys include mixtures of similar products made by
+                                            different
+                                            distillers
+                                            and in
+                                            different periods (Scotch) and also whiskeys made with combinations of the
+                                            neutral
+                                            whiskeys
+                                            (which
+                                            have no distinctive flavour characteristics) and straight whiskeys (United
+                                            States and
+                                            Canada).
+                                            Small
+                                            quantities of other flavouring materials (e.g., sherry, fruit juices) may be
+                                            included in
+                                            blends.
+                                            Governments may require that some whiskeys be aged under their supervision
+                                            for specific
+                                            periods.
+                                        </p>
+                                    </div>
 
-                        The whiskeys produced in each country are distinctive in character because of differences in the
-                        method of production, the type and character of the cereal grains, and the quality and character
-                        of
-                        the water employed.
-
-                        Straight whiskeys are unmixed or mixed only with whiskey from the same distillation period and
-                        distiller. Blended whiskeys include mixtures of similar products made by different distillers
-                        and in
-                        different periods (Scotch) and also whiskeys made with combinations of the neutral whiskeys
-                        (which
-                        have no distinctive flavour characteristics) and straight whiskeys (United States and Canada).
-                        Small
-                        quantities of other flavouring materials (e.g., sherry, fruit juices) may be included in blends.
-                        Governments may require that some whiskeys be aged under their supervision for specific periods.
-                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
                 </div>
-
             </div>
 
     </section>
@@ -166,5 +365,14 @@
 
     <script src="./assets/js/script.js"></script>
 </body>
+<footer class="footer">
+    <div class="content has-text-centered">
+        <p>
+            <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
+            <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+            is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+        </p>
+    </div>
+</footer>
 
 </html>
