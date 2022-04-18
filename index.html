@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Clinks</title>
     <link rel="stylesheet" href="./assets/css/bulma.css">
     <link href="./assets/css/style.css">
 </head>
@@ -33,28 +33,24 @@
                     Home
                 </a>
 
-                <a class="navbar-item">
-                    Documentation
-                </a>
-
                 <div class="navbar-item has-dropdown is-hoverable">
-                    <a class="navbar-link">
-                        More
+                    <a href="#gin" class="navbar-link">
+                        Gin
                     </a>
 
                     <div class="navbar-dropdown">
-                        <a class="navbar-item">
-                            About
+                        <a  href="#rum" class="navbar-item">
+                            Rum
                         </a>
-                        <a class="navbar-item">
-                            Jobs
+                        <a href="#vodka" class="navbar-item">
+                            Vodka
                         </a>
-                        <a class="navbar-item">
-                            Contact
+                        <a href="#tequila" class="navbar-item">
+                            Tequila
                         </a>
-                        <hr class="navbar-divider">
-                        <a class="navbar-item">
-                            Report an issue
+                        
+                        <a href="#whiskey" class="navbar-item">
+                            Whiskey
                         </a>
                     </div>
                 </div>
@@ -63,27 +59,21 @@
             <div class="navbar-end">
                 <div class="navbar-item">
                     <div class="buttons">
-                        <a class="button is-primary">
-                            <strong>Sign up</strong>
-                        </a>
-                        <a class="button is-light">
-                            Log in
-                        </a>
+                        <form>
+                            <h1> <strong>Search For A Drink Recipe By Name!</strong></h1>
+                            <input id="drink-name" type="text" placeholder="Enter Drink Name"></input>
+                            <button id="search-drink" type="submit" onclick=getDrinkApi()>Search</button>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
     </nav>
-    <!-- <h1> <strong>Search Drink</strong></h1> -->
 
     <section class="drink-recipes">
 
 
 
-        <form>
-            <input id="drink-name" type="text" placeholder="Enter Alcohol Type"></input>
-            <button id="search-drink" type="submit" onclick=getDrinkApi()>Search Alcohol</button>
-        </form>
 
         <div class="drink-container" id="drink-container">
 
@@ -229,6 +219,15 @@
                                                 World War, the
                                                 historical moment when Vodka reaches the hands of the North Americans.
                                             </p>
+                                        </div>
+                                        <div id="user-drink" class="searched-recipe">
+                                         <h3>Start Mixing!</h3>
+                                         <h4 id="drink-name">Drink name goes here</h4>
+                                         <dl id="recipe-text">
+                                             
+                                             
+
+                                         </dl>
                                         </div>
                                     </div>
                                 </div>
